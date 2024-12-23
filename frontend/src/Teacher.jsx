@@ -76,7 +76,6 @@ function Teacher() {
   useEffect(() => {
     fetch("/api/data")
       .then((res) => res.json())
-      // .then(data => console.log(data))
       .then((data) => setQuizzes(data))
       .catch((err) => console.error(err));
   }, []);
